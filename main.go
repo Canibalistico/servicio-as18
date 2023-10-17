@@ -20,7 +20,7 @@ func main() {
 	controllers.UsersRoutes(app)
 	controllers.EventRoutes(app)
 
-	err := app.Listen(":3000")
+	err := app.Listen(":0.0.0.0:8080")
 	if err != nil {
 		panic(err)
 	}
