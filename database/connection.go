@@ -7,7 +7,7 @@ import (
 	"gorm.io/gorm"
 )
 
-var DSN = "cra7232_rapidweb:J@ck1984@tcp(rapidweb.cl)/cra7232_mytext?charset=utf8mb4&parseTime=True"
+var DSN = ""
 
 var DB *gorm.DB
 
