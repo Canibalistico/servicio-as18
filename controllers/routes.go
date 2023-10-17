@@ -9,11 +9,11 @@ func UsersRoutes(app *fiber.App) {
 
 	app.Post("/api/v1/users", CreateUser)
 	app.Post("/api/v1/login", Login)
-	/*
+	
 		app.Use(jwtware.New(jwtware.Config{
 			SigningKey: jwtware.SigningKey{Key: []byte("secret")},
 		}))
-	*/
+	
 	// rutas protegidas
 	app.Get("/api/v1/users/:id", GetUser)
 	app.Put("/api/v1/users/:id", UpdateUser)
